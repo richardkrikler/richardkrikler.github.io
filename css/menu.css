@@ -23,7 +23,7 @@ nav span#menuBt {
     cursor: pointer;
 }
 
-nav ul#menuOverlay {
+nav ul.menuOverlay {
     display: none;
 }
 
@@ -40,7 +40,7 @@ div#menu.visible {
     background-color: white;
 }
 
-div#menu ul#menuOverlay {
+div#menu ul.menuOverlay {
     display: flex;
     list-style-type: none;
 
@@ -63,7 +63,7 @@ div#menu ul li {
         display: none;
     }
 
-    nav ul#menuOverlay {
+    nav ul.menuOverlay {
         display: flex;
     }
 
