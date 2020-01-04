@@ -17,6 +17,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/form.css">
 
     <!-- Animation CSS PlugIn -->
     <link rel="stylesheet" href="../css/tuesday.min.css">
@@ -47,7 +48,7 @@
 
     <nav>
         <h1 id="name"><a href="../index.html">Richard Krikler</a></h1>
-        <span id="menuBt">Menu</span>
+        <span id="menuBt">Menü</span>
 
         <ul class="menuOverlay">
             <li><a href="../index.html">Home</a></li>
@@ -67,11 +68,25 @@
     </div>
 
     <main>
-        <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus similique cum aliquid quas quasi
-            cupiditate, asperiores harum. Quisquam atque omnis, voluptatibus fugiat nam minima eius iure consectetur
-            provident officia cum.
-        </div>
+        <h2>Contact</h2>
+        <form action="https://richard-krikler.000webhostapp.com/mail.php" method="post">
+            <label for="firstNameForm">Vorname:</label>
+            <input type="text" id="firstNameForm" name="firstName" required>
+            
+            <label for="lastNameForm">Nachname:</label>
+            <input type="text" id="lastNameForm" name="lastName" required>
+            
+            <label for="phoneForm">Telefonnummer:</label>
+            <input type="tel" id="phoneForm" name="phone" required>
+
+            <label for="emailForm">E-Mail:</label>
+            <input type="email" placeholder="example@mail.com" id="emailForm" name="email" required>
+
+            <label for="textForm">Text:</label>
+            <textarea id="textForm" cols="30" rows="10" name="message" required></textarea>
+
+            <input type="submit" value="Senden">
+        </form>
     </main>
 
 
