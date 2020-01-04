@@ -1,0 +1,75 @@
+:root {
+    --main-bc-c: rgb(238, 238, 238);
+}
+
+body {
+    background-color: var(--main-bc-c);
+    margin: 0;
+}
+
+
+* {
+    /* Hide all Outlines of focused Elements */
+    outline: none;
+
+    font-family: "Open Sans", sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+header {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+
+    background-color: white;
+}
+
+header div#nameOverlayDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+header div p#nameOverlay {
+    font-size: 30pt;
+}
+
+
+nav {
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+nav span {
+    font-weight: 800;
+    font-size: x-large;
+}
+
+nav ul {
+    width: 60%;
+    list-style-type: none;
+    padding: 0;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    padding: 0px 20px;
+}
+
+
+main {
+}
