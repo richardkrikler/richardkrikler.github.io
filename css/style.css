@@ -2,11 +2,20 @@
     --main-bc-c: rgb(238, 238, 238);
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: var(--main-bc-c);
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
+div#wrapper {
+    flex: 1 0 auto;
+}
 
 * {
     /* Hide all Outlines of focused Elements */
@@ -28,5 +37,67 @@ main {
     border-radius: 10px;
 
     padding: 10px;
+    padding-bottom: 20px;
     margin: 30px;
 }
+
+
+main a {
+    color: blue;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+main section {
+    padding-bottom: 5px;
+}
+
+main div.images {
+    background-color: var(--main-bc-c);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+main div.images img {
+    width: 30%;
+}
+
+main div.images img.Portrait {
+    width: 10%;
+}
+
+
+
+footer {
+    flex-shrink: 0;
+
+
+    background-color: black;
+    width: 100%;
+    padding: 5px 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+footer * {
+    color: white;
+    padding: 5px;
+    font-size: 15pt;
+}
+
+footer i#twitter:hover {
+    color: rgb(0, 172, 237);
+}
+
+footer i#mail:hover {
+    color: rgb(230, 55, 52);
+}
+
+footer i#github:hover {
+    color: rgb(199, 0, 199);
+}
+
+
