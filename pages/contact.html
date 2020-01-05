@@ -11,8 +11,8 @@
 
     <title>Richard Krikler - Kontakt</title>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awsome -->
+    <script src="https://kit.fontawesome.com/87d3f13c28.js" crossorigin="anonymous"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
@@ -45,53 +45,56 @@
 </head>
 
 <body>
+    <div id="wrapper">
+        <nav>
+            <h1 id="name"><a href="../index.html">Richard Krikler</a></h1>
+            <span id="menuBt">Menü</span>
 
-    <nav>
-        <h1 id="name"><a href="../index.html">Richard Krikler</a></h1>
-        <span id="menuBt">Menü</span>
+            <ul class="menuOverlay">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="projects.html">Projekte</a></li>
+                <li><a href="cv.html">Lebenslauf</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
 
-        <ul class="menuOverlay">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="projects.html">Projekte</a></li>
-            <li><a href="cv.html">Lebenslauf</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
-        </ul>
-    </nav>
+        <div id="menu">
+            <ul class="menuOverlay">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="projects.html">Projekte</a></li>
+                <li><a href="cv.html">Lebenslauf</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </div>
 
-    <div id="menu">
-        <ul class="menuOverlay">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="projects.html">Projekte</a></li>
-            <li><a href="cv.html">Lebenslauf</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
-        </ul>
+        <main>
+            <h2>Kontakt</h2>
+            <form action="https://richard-krikler.000webhostapp.com/mail.php" method="post">
+                <label for="firstNameForm">Vorname:</label>
+                <input type="text" id="firstNameForm" name="firstName" required>
+
+                <label for="lastNameForm">Nachname:</label>
+                <input type="text" id="lastNameForm" name="lastName" required>
+
+                <label for="phoneForm">Telefonnummer:</label>
+                <input type="tel" id="phoneForm" name="phone" required>
+
+                <label for="emailForm">E-Mail:</label>
+                <input type="email" placeholder="example@mail.com" id="emailForm" name="email" required>
+
+                <label for="textForm">Text:</label>
+                <textarea id="textForm" cols="30" rows="10" name="message" required></textarea>
+
+                <input type="submit" value="Senden">
+            </form>
+        </main>
+
     </div>
 
-    <main>
-        <h2>Kontakt</h2>
-        <form action="https://richard-krikler.000webhostapp.com/mail.php" method="post">
-            <label for="firstNameForm">Vorname:</label>
-            <input type="text" id="firstNameForm" name="firstName" required>
-            
-            <label for="lastNameForm">Nachname:</label>
-            <input type="text" id="lastNameForm" name="lastName" required>
-            
-            <label for="phoneForm">Telefonnummer:</label>
-            <input type="tel" id="phoneForm" name="phone" required>
-
-            <label for="emailForm">E-Mail:</label>
-            <input type="email" placeholder="example@mail.com" id="emailForm" name="email" required>
-
-            <label for="textForm">Text:</label>
-            <textarea id="textForm" cols="30" rows="10" name="message" required></textarea>
-
-            <input type="submit" value="Senden">
-        </form>
-    </main>
-
-
     <footer>
-
+        <a href="https://twitter.com/KriklerR"><i class="fab fa-twitter" id="twitter"></i></a>
+        <a href="pages/contact.html"><i class="fas fa-envelope-open" id="mail"></i></a>
+        <a href="https://github.com/RichardKrikler"><i class="fab fa-github" id="github"></i></a>
     </footer>
 
 
