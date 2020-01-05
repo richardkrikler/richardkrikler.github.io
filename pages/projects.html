@@ -11,8 +11,8 @@
 
     <title>Richard Krikler - Kontakt</title>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awsome -->
+    <script src="https://kit.fontawesome.com/87d3f13c28.js" crossorigin="anonymous"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
@@ -27,6 +27,7 @@
 
     <!-- JavaScript -->
     <script src="../javascript/script.js" defer></script>
+    <script src="../javascript/pictureView.js" defer></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155217097-2"></script>
@@ -45,41 +46,68 @@
 </head>
 
 <body>
+    <div id="wrapper">
+        <nav>
+            <h1 id="name"><a href="../index.html">Richard Krikler</a></h1>
+            <span id="menuBt">Menü</span>
 
-    <nav>
-        <h1 id="name"><a href="../index.html">Richard Krikler</a></h1>
-        <span id="menuBt">Menü</span>
+            <ul class="menuOverlay">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="projects.html">Projekte</a></li>
+                <li><a href="cv.html">Lebenslauf</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
 
-        <ul class="menuOverlay">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="projects.html">Projekte</a></li>
-            <li><a href="cv.html">Lebenslauf</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
-        </ul>
-    </nav>
+        <div id="menu">
+            <ul class="menuOverlay">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="projects.html">Projekte</a></li>
+                <li><a href="cv.html">Lebenslauf</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </div>
 
-    <div id="menu">
-        <ul class="menuOverlay">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="projects.html">Projekte</a></li>
-            <li><a href="cv.html">Lebenslauf</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
-        </ul>
+        <main>
+            <h2>Projekte</h2>
+
+            <section>
+                <h3>Anonym Chat</h3>
+                <p>
+                    Dieses Projekt ist dient dazu anonym to kommunizieren, ohne Benutzernamen oder ähnliches.
+                    Gespeichert werden die Nachrichten in einer Textdatei (da ich mich mit Datenbanken nicht auskenne), mithilfe von einem simplen PHP-Script.
+                </p>
+                <p>
+                    In diesem Projekt wollte ich verschiedenste Themen im Bereich des Webdevelopments ausprobieren.
+                    Beispielsweise die Abspeicherung von Cookies, oder auch das Senden eines HTTPS-Requests mit JavaScript.
+                </p>
+
+                <div class="images">
+                    <img src="../images/projects/anonymChatDesktopLight.png" alt="Anonym Chat Desktop version Light">
+                    <img src="../images/projects/anonymChatDesktopDark.png" alt="Anonym Chat Desktop version Dark">
+                    <img src="../images/projects/anonymChatMobileLight.png" alt="Anonym Chat Mobile version Light" class="Portrait">
+                    <img src="../images/projects/anonymChatMobileDark.png" alt="Anonym Chat Mobile version Dark" class="Portrait">
+                </div>
+
+                <p><a href="https://farbwechsel.000webhostapp.com/" target="_blank">Projektseite</a></p>
+                <p><a href="https://github.com/RichardKrikler/Anonym-Chat" target="_blank">GitHub Repository</a></p>
+            </section>
+
+            <!-- <section>
+                <h3></h3>
+                <p>
+
+                </p>
+            </section> -->
+        </main>
+
     </div>
 
-    <main>
-        <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus similique cum aliquid quas quasi
-            cupiditate, asperiores harum. Quisquam atque omnis, voluptatibus fugiat nam minima eius iure consectetur
-            provident officia cum.
-        </div>
-    </main>
-
-
     <footer>
-
+        <a href="https://twitter.com/KriklerR"><i class="fab fa-twitter" id="twitter"></i></a>
+        <a href="pages/contact.html"><i class="fas fa-envelope-open" id="mail"></i></a>
+        <a href="https://github.com/RichardKrikler"><i class="fab fa-github" id="github"></i></a>
     </footer>
-
 
 </body>
 
