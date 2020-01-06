@@ -56,6 +56,12 @@ div#menu ul li {
     padding: 20px 20px;
 }
 
+nav.visible {
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+}
+
 
 
 @media (min-width: 600px) {
