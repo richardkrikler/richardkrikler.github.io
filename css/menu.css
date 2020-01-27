@@ -27,6 +27,13 @@ nav ul.menuOverlay {
     display: none;
 }
 
+select.languageList {
+    border-radius: 5px;
+    width: min-content;
+    height: min-content;
+}
+
+
 div#menu {
     display: none;
 }
