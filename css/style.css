@@ -54,18 +54,23 @@ main section {
     padding-bottom: 5px;
 }
 
+
 main div.images {
+    display: flex;
+    flex-wrap: wrap;
+
     background-color: var(--main-bc-c);
     border-radius: 5px;
     padding: 10px;
 }
 
 main div.images img {
-    width: 30%;
+    padding: 0px 5px;
+    width: 300px;
 }
 
 main div.images img.Portrait {
-    width: 10%;
+    width: 100px
 }
 
 
