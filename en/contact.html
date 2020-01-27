@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="description" content="Richard Krikler. Homepage from Richard Krikler">
+    <meta name="keywords"
+        content="Krikler Richard,KriklerRichard,Krikler,Richard,Home,About me,Projects,Contact,GitHub">
+    <meta name="author" content="Richard Krikler">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Richard Krikler - Contact</title>
+
+    <!-- Font Awsome -->
+    <script src="https://kit.fontawesome.com/87d3f13c28.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/form.css">
+
+    <!-- Animation CSS PlugIn -->
+    <link rel="stylesheet" href="../css/tuesday.min.css">
+
+    <!-- Favicon - ICON -->
+    <link rel='icon' type='image/x-icon' href='../favicon.ico' />
+    <link rel="apple-touch-icon" href="../favicon.ico" />
+
+    <!-- JavaScript -->
+    <script src="../javascript/script.js" defer></script>
+
+    <!-- JavaScript for Language -->
+    <script src="../javascript/language.js" defer></script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155217097-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-155217097-2');
+    </script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav>
+            <h1 id="name"><a href="index.html">Richard Krikler</a></h1>
+            <span id="menuBt">Menu</span>
+
+            <ul class="menuOverlay"></ul>
+        </nav>
+
+        <div id="menu">
+            <ul class="menuOverlay"></ul>
+        </div>
+
+        <main>
+            <h2>Contact</h2>
+            <form action="https://richard-krikler.000webhostapp.com/mail.php" method="post">
+                <label for="firstNameForm">First Name:</label>
+                <input type="text" id="firstNameForm" name="firstName" required>
+
+                <label for="lastNameForm">Last Name:</label>
+                <input type="text" id="lastNameForm" name="lastName" required>
+
+                <label for="phoneForm">Phone Number:</label>
+                <input type="tel" id="phoneForm" name="phone">
+
+                <label for="emailForm">E-Mail:</label>
+                <input type="email" placeholder="example@mail.com" id="emailForm" name="email" required>
+
+                <label for="textForm">Text:</label>
+                <textarea id="textForm" cols="30" rows="10" name="message" required></textarea>
+
+                <input type="submit" value="Send">
+            </form>
+        </main>
+
+    </div>
+
+    <footer>
+        <a href="https://twitter.com/KriklerR"><i class="fab fa-twitter" id="twitter"></i></a>
+        <a href="contact.html"><i class="fas fa-envelope-open" id="mail"></i></a>
+        <a href="https://github.com/RichardKrikler"><i class="fab fa-github" id="github"></i></a>
+    </footer>
+
+
+</body>
+
+</html>
