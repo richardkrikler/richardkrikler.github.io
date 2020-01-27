@@ -4,7 +4,6 @@ let menuBt = document.getElementById("menuBt");
 menuBt.addEventListener("click", showMenu);
 
 let menu = document.getElementById("menu");
-let menuOverlay = document.getElementById("menuOverlay");
 
 function showMenu() {
     if (menu.classList == "") {
@@ -18,3 +17,5 @@ function showMenu() {
         }, 100);
     }
 }
+
+
