@@ -47,9 +47,9 @@ reloadMenu();
 function reloadMenu() {
     if (language == "en") {
         for (let i = 0; i < menuOverlay.length; i++) {
-            menuOverlay[i].innerHTML = "<li><a href=\"index.html\">Home</a></li>" +
-                "<li><a href=\"projects.html\">Projects</a></li>" +
-                "<li><a href=\"contact.html\">Contact</a></li>" +
+            menuOverlay[i].innerHTML = "<li><a href=\"/\">Home</a></li>" +
+                "<li><a href=\"projects\">Projects</a></li>" +
+                "<li><a href=\"contact\">Contact</a></li>" +
                 "<li><select class = \"languageList\">" +
                 "<option value = \"de\">DE</option>" +
                 "<option value = \"en\">EN</option>" +
@@ -57,9 +57,9 @@ function reloadMenu() {
         }
     } else {
         for (let i = 0; i < menuOverlay.length; i++) {
-            menuOverlay[i].innerHTML = "<li><a href=\"index.html\">Home</a></li>" +
-                "<li><a href=\"projects.html\">Projekte</a></li>" +
-                "<li><a href=\"contact.html\">Kontakt</a></li>" +
+            menuOverlay[i].innerHTML = "<li><a href=\"/\">Home</a></li>" +
+                "<li><a href=\"projects\">Projekte</a></li>" +
+                "<li><a href=\"contact\">Kontakt</a></li>" +
                 "<li><select class = \"languageList\">" +
                 "<option value = \"de\">DE</option>" +
                 "<option value = \"en\">EN</option>" +
