@@ -1,0 +1,53 @@
+
+main {
+    padding: 0;
+    height: 70%;
+}
+
+main h1 {
+    font-size: 50pt;
+    color: #34dca1;
+}
+
+main div#left {
+    background-color: #34dca1;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+main div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main div#right a {
+    color: white;
+    background-color: #34dca1;
+    padding: 8px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+
+@media (min-width: 600px) {
+    main div#left {
+        float: left;
+        border-radius: 10px 0px 0px 10px;
+    }
+    
+    main div#right {
+        float: right;
+        border-radius: 0px 0px 10px 10px;
+    }
+    
+    main div {
+        width: 50%;
+        height: 100%;
+    }
+    
+    main h1 {
+        font-size: 70pt;
+    }
+}
