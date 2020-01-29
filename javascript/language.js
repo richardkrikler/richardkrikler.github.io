@@ -17,7 +17,7 @@ function loadCookies() {
 
     if (!window.location.pathname.includes("/en")) {
         if (language != "de") {
-            window.location.href = "en" + window.location.pathname;
+            window.location.href = "/en" + window.location.pathname;
         }
     } else {
         if (language == "de") {
