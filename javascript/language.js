@@ -1,7 +1,8 @@
+window.addEventListener("load", loadCookies);
+
 let language;
 let languageList;
 
-loadCookies();
 function loadCookies() {
     // console.log("Cookie: " + getCookie("language"));
     language = getCookie("language");
