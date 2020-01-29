@@ -1,7 +1,7 @@
-window.addEventListener("load", loadCookies);
 let language;
 let languageList;
 
+loadCookies();
 function loadCookies() {
     // console.log("Cookie: " + getCookie("language"));
     language = getCookie("language");
@@ -16,6 +16,10 @@ function loadCookies() {
 
     if (!window.location.pathname.includes("/en")) {
         if (language != "de") {
+            if (!window.location.pathname.includes("/en/404") && document.title.includes("404")) {
+                window.location.href = "en/404";
+            }
+
             window.location.href = "en" + window.location.pathname;
         }
     } else {
@@ -47,9 +51,9 @@ reloadMenu();
 function reloadMenu() {
     if (language == "en") {
         for (let i = 0; i < menuOverlay.length; i++) {
-            menuOverlay[i].innerHTML = "<li><a href=\"/\">Home</a></li>" +
-                "<li><a href=\"projects\">Projects</a></li>" +
-                "<li><a href=\"contact\">Contact</a></li>" +
+            menuOverlay[i].innerHTML = "<li><a href=\"/en\">Home</a></li>" +
+                "<li><a href=\"en/projects\">Projects</a></li>" +
+                "<li><a href=\"en/contact\">Contact</a></li>" +
                 "<li><select class = \"languageList\">" +
                 "<option value = \"de\">DE</option>" +
                 "<option value = \"en\">EN</option>" +
