@@ -8,10 +8,10 @@ let menu = document.getElementById("menu");
 function showMenu() {
     if (menu.classList == "") {
         nav.className = "visible";
-        menu.className = "visible animated  tdFadeIn";
+        menu.className = "visible animated tdFadeIn";
     } else {
         nav.className = "";
-        menu.className = "visible animated  tdFadeOut";
+        menu.className = "visible animated tdFadeOut";
         setTimeout(() => {
             menu.className = "";
         }, 100);

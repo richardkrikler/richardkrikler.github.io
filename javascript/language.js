@@ -70,10 +70,47 @@ function reloadMenu() {
 
     languageList = document.getElementsByClassName("languageList");
     for (let i = 0; i < languageList.length; i++) {
+        // languageList[i].addEventListener("click", languageAnimation);
         languageList[i].addEventListener("change", function () {
             document.cookie = "language=" + languageList[i].value + "; path=/";
             //                                                      global (all sites under the root folder)
             loadCookies();
         })
     }
+    
 }
+
+// let languageCounter = 0;
+// function languageAnimation() {
+//     if (detectmob) {
+//         let options = event.target.children;
+//         if (languageCounter % 2 == 0) {
+//             for (let i = 0; i < options.length; i++) {
+//                 options[i].className = "animated tdFadeIn";            
+//             }
+//         } else {
+//             for (let i = 0; i < options.length; i++) {
+//                 options[i].className = "";            
+//             }         
+//         }
+//     }
+//     languageCounter++;
+// }
+
+
+// Detect if the website is used in a mobile browser
+function detectmob() {
+    if (navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/webOS/i) ||
+        navigator.userAgent.match(/iPhone/i) ||
+        navigator.userAgent.match(/iPad/i) ||
+        navigator.userAgent.match(/iPod/i) ||
+        navigator.userAgent.match(/BlackBerry/i) ||
+        navigator.userAgent.match(/Windows Phone/i)
+    ) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
