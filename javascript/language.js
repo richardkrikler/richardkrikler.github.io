@@ -17,15 +17,15 @@ function loadCookies() {
 
     if (!window.location.pathname.includes("/en")) {
         if (language != "de") {
-            if (!window.location.pathname.includes("/en/404") && document.title.includes("404")) {
-                window.location.href = "en/404";
-            }
-
             window.location.href = "en" + window.location.pathname;
         }
     } else {
         if (language == "de") {
             window.location.href = ".." + window.location.pathname.substring(3, window.location.pathname.length);
+        } else {
+            if (!window.location.pathname.includes("/en/404") && document.title.includes("404")) {
+                window.location.href = "/en/404";
+            }
         }
     }
 }
