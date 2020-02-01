@@ -74,6 +74,7 @@ main section {
 
 main div.images {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 
     background-color: var(--main-bc-c);
@@ -82,13 +83,26 @@ main div.images {
 }
 
 main div.images img {
-    padding: 0px 5px;
-    width: 300px;
+    padding: 5px;
+    width: 90%;
 }
 
 main div.images img.Portrait {
-    width: 100px
+    width: 30%;
 }
+
+@media (min-width: 600px) {
+    main div.images img {
+        padding: 5px;
+        width: unset;
+        height: 200px;
+    }
+    
+    main div.images img.Portrait {
+        width: unset;
+    }
+}
+
 
 
 
