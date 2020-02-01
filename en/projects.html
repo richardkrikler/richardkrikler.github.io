@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta name="description" content="Richard Krikler. Homepage von Richard Krikler">
+    <meta name="description" content="Richard Krikler. Projects by Richard Krikler">
     <meta name="keywords"
         content="Krikler Richard,KriklerRichard,Krikler,Richard,Home,About me,Projects,Contact,GitHub">
     <meta name="author" content="Richard Krikler">
@@ -32,6 +32,8 @@
     <!-- JavaScript for Language -->
     <script src="../javascript/language.js" defer></script>
 
+    <!-- JavaScript for Image View -->
+    <script src="../javascript/BigPicture.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155217097-2"></script>
@@ -66,9 +68,10 @@
             <h2>Projects</h2>
 
             <section>
-                <h3>Anonym Chat</h3>
+                <h3 id="anonymChat">Anonym Chat</h3>
                 <p>
-                    This project has it's use for communicating anonymously, without a username or other things like that.
+                    This project has it's use for communicating anonymously, without a username or other things like
+                    that.
                     The messages are being stored in a Txt-File (Why? Because I do not know anything about Databases)
                     with the help a PHP-Script.
                 </p>
@@ -77,12 +80,16 @@
                     For example, storing Cookies, or sending HTTPS-Requests with JavaScript.
                 </p>
 
-                <div class="images">
-                    <img src="../images/projects/anonymChatDesktopLight.png" alt="Anonym Chat Desktop version Light">
-                    <img src="../images/projects/anonymChatDesktopDark.png" alt="Anonym Chat Desktop version Dark">
-                    <img src="../images/projects/anonymChatMobileLight.png" alt="Anonym Chat Mobile version Light"
+                <div class="images" id="anonymChatPic">
+                    <img src="../images/projects/anonymChatDesktopLight.png"
+                        data-bp="../images/projects/anonymChatDesktopLight.png" alt="Anonym Chat Desktop version Light">
+                    <img src="../images/projects/anonymChatDesktopDark.png"
+                        data-bp="../images/projects/anonymChatDesktopDark.png" alt="Anonym Chat Desktop version Dark">
+                    <img src="../images/projects/anonymChatMobileLight.png"
+                        data-bp="../images/projects/anonymChatMobileLight.png" alt="Anonym Chat Mobile version Light"
                         class="Portrait">
-                    <img src="../images/projects/anonymChatMobileDark.png" alt="Anonym Chat Mobile version Dark"
+                    <img src="../images/projects/anonymChatMobileDark.png"
+                        data-bp="../images/projects/anonymChatMobileDark.png" alt="Anonym Chat Mobile version Dark"
                         class="Portrait">
                 </div>
 
@@ -90,12 +97,26 @@
                 <p><a href="https://github.com/RichardKrikler/Anonym-Chat" target="_blank">GitHub Repository</a></p>
             </section>
 
-            <!-- <section>
-                <h3></h3>
+            <section>
+                <h3 id="keyboardShortcuts">Keyboard-Shortcuts</h3>
                 <p>
-
+                    In this script I am programming various Keyboard Shortcuts, to make the every day life with the
+                    computer more efficient.
+                    For example the duplication of Chrome-Tabs (Ctrl+Alt+D), or switching through all Chrome-Tabs
+                    (Right-Shift / Ctrl+Right-Shift), is accelerating the usage.
                 </p>
-            </section> -->
+                <p>
+                    Hotkeys.ahk: general Hotkeys (Chrome, IntelliJ, ...)
+                </p>
+                <p>
+                    ShowMacrosForProgram.ahk: shows all Hotkeys for the current active program
+                </p>
+                <p>
+                    appSwitcher.ahk: for switching fast between two programs
+                </p>
+                <p><a href="https://github.com/RichardKrikler/Keyboard-Shortcuts" target="_blank">GitHub Repository</a>
+                </p>
+            </section>
         </main>
 
     </div>
@@ -105,6 +126,23 @@
         <a href="contact"><i class="fas fa-envelope-open" id="mail"></i></a>
         <a href="https://github.com/RichardKrikler"><i class="fab fa-github" id="github"></i></a>
     </footer>
+
+
+    <script>
+        let images = document.getElementsByClassName("images");
+        for (let i = 0; i < images.length; i++) {
+            let currentId = images[i].id;
+            let idElement = document.getElementById(currentId);
+            for (let j = 0; j < idElement.children.length; j++) {
+                idElement.children[j].addEventListener("click", function (e) {
+                    BigPicture({
+                        el: e.target,
+                        gallery: '#' + currentId,
+                    })
+                })
+            }
+        }
+    </script>
 
 </body>
 
