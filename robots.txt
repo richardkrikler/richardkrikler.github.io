@@ -1,5 +1,16 @@
 User-Agent: *
-Allow: /index.html
-Disallow: /favicon.ico
-Disallow: /javascript
+Allow: /
+Allow: /projects
+Allow: /contact
 Disallow: /css
+Disallow: /en
+Disallow: /images
+Disallow: /javascript
+Disallow: /404
+Disallow: /404.html
+Disallow: /favicon.ico
+Disallow: /LICENSE
+Disallow: /robots.txt
+
+Sitemap: sitemap.xml
+
