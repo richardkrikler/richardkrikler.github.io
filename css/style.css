@@ -101,6 +101,14 @@ main div.images img.Portrait {
     main div.images img.Portrait {
         width: unset;
     }
+
+    main div.images img.landscape {
+        height: 50px;
+    }
+}
+
+hr {
+    border: 1px solid black;
 }
 
 
@@ -136,4 +144,17 @@ footer i#github:hover {
     color: rgb(199, 0, 199);
 }
 
+footer i#linkedIn:hover {
+    color: #0274b3;
+}
 
+
+code {
+    display: block;
+    background-color: var(--main-bc-c);
+    border-radius: 5px;
+    
+    margin: 5px 0;
+    border: 1px gray solid;
+    width: min-content;
+}
