@@ -21,7 +21,7 @@ function loadCookies() {
         }
     } else {
         if (language == "de") {
-            window.location.href = ".." + window.location.pathname.substring(3, window.location.pathname.length);
+            window.location.href = window.location.pathname.substring(3, window.location.pathname.length);
         } else {
             if (!window.location.pathname.includes("/en/404") && document.title.includes("404")) {
                 window.location.href = "/en/404";
@@ -39,8 +39,8 @@ function reloadMenu() {
     if (language == "en") {
         for (let i = 0; i < menuOverlay.length; i++) {
             menuOverlay[i].innerHTML = "<li><a href=\"/en\">Home</a></li>" +
-                "<li><a href=\"https://richardkrikler.github.io/en/projects\">Projects</a></li>" +
-                "<li><a href=\"https://richardkrikler.github.io/en/contact\">Contact</a></li>" +
+                "<li><a href=\"/en/projects\">Projects</a></li>" +
+                "<li><a href=\"/en/contact\">Contact</a></li>" +
                 "<li><select class = \"languageList\">" +
                 "<option value = \"de\">DE</option>" +
                 "<option value = \"en\">EN</option>" +
@@ -49,8 +49,8 @@ function reloadMenu() {
     } else {
         for (let i = 0; i < menuOverlay.length; i++) {
             menuOverlay[i].innerHTML = "<li><a href=\"/\">Home</a></li>" +
-                "<li><a href=\"https://richardkrikler.github.io/projects\">Projekte</a></li>" +
-                "<li><a href=\"https://richardkrikler.github.io/contact\">Kontakt</a></li>" +
+                "<li><a href=\"/projects\">Projekte</a></li>" +
+                "<li><a href=\"/contact\">Kontakt</a></li>" +
                 "<li><select class = \"languageList\">" +
                 "<option value = \"de\">DE</option>" +
                 "<option value = \"en\">EN</option>" +
