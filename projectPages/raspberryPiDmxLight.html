@@ -81,9 +81,6 @@
 
             <section>
                 <p>
-                    [Currently only in German.]
-                </p>
-                <p>
                     Dieses Projekt besteht aus ein Web-Interface, bei dem man eine DMX-Lampe mithilfe eines
                     RaspberryPi's und der <a href="https://www.openlighting.org/" target="_blank">Open Lighting
                         Architecture (OLA)</a>
@@ -172,7 +169,7 @@ SUBSYSTEM=="usb|usb_device", ACTION=="add", ATTRS{idVendor}=="0403", ATTRS{idPro
                 <br>
                 <h4>OLA Plugins konfigurieren</h4>
                 <p>
-                    Über den Browser: 192.168.0.128:9090 (IP Adresse vom PI und den Port für OLA)
+                    Über den Browser: 192.168.0.128:9090 (IP-Adresse vom PI und den Port für OLA).
                     Um die Plugins zu konfigureiren, geht man zuerst zum neuen UI von OLA (unten auf der Website auf
                     "New UI (Beta)").
                     Das Plugin "FTDI USB DMX" einschalten und die Plugins "Serial USB" und "Enttec Open DMX"
@@ -184,7 +181,7 @@ SUBSYSTEM=="usb|usb_device", ACTION=="add", ATTRS{idVendor}=="0403", ATTRS{idPro
                     Allerdings wurden bei mir die Plugins nicht immer beim Booten neugeladen, deswegen braucht man ein
                     Python-Script, namens "reloadPlugins.py". Dieses wird später auch beim Web-Interface
                     ("/var/www/html") mit
-                    heruntergeladen, falls man das Interface nicht braucht kann man einfach die Datei selbst erstellen.
+                    heruntergeladen, falls man das Interface nicht braucht, kann man einfach die Datei selbst erstellen.
                     <pre><code class="python">#!/usr/bin/env python
 
 import time
@@ -260,8 +257,8 @@ exit (0)</code></pre>
                 <br>
                 <h4>Tests</h4>
                 <p>
-                    Und jetzt kann man, wenn man in das Universe, im Web-Interface, einsteigt, zum Reiter DMX-Console gehen
-                    und die einzelnen Channels einstellen.
+                    Und jetzt kann man im Web-Interface in das Universe einsteigen und zum Reiter "DMX-Console" gehen.
+                    Dort kann man die einzelnen Channels einstellen.
                     <div class="images" id="olaDmxConsole">
                         <img src="../images/projects/raspberryPiDmxLight/dmxConsole.png"
                             data-bp="../images/projects/raspberryPiDmxLight/dmxConsole.png"
@@ -273,7 +270,7 @@ exit (0)</code></pre>
                     (Bsp.: helligkeit(128), rot(255), grün(255), gelb(200))
                     <pre><code class="bash">pi@light:~ $ ola_streaming_client  --universe 1  --dmx 128,255,255,200</code></pre>
 
-                    Wenn das geschafft ist sollte man auch über das CMD (Windows) einen curl command senden können.
+                    Wenn das geschafft ist, sollte man auch über das CMD (Windows) einen curl command senden können.
                     <pre><code class="PowerShell">curl -d u=1 -d d=255,255,255,255,0,0,0,0,0,0,0,0,0,0,0,0 "http://192.168.0.128:9090/set_dmx"</code></pre>
                     <div class="images" id="WindowsCmdSetDmx">
                         <img src="../images/projects/raspberryPiDmxLight/curlExample.png"
@@ -284,7 +281,7 @@ exit (0)</code></pre>
                 <br>
                 <h4>Mein Web-Interface (GitHub)</h4>
                 <p>
-                    Jetzt kannst du mein Git Repository herunterladen (im Ordner „var/www/html“).
+                    Jetzt kann man mein Git Repository herunterladen (im Ordner „var/www/html“).
                     <pre><code class="bash">pi@light:~ $ sudo git clone https://github.com/RichardKrikler/ RaspberryPi_DMX-Light
 pi@light:~ $ sudo cp RaspberryPi_DMX-Light/* . -r
 pi@light:~ $ sudo rm RaspberryPi_DMX-Light -r</code></pre>
@@ -295,7 +292,7 @@ pi@light:~ $ sudo rm RaspberryPi_DMX-Light -r</code></pre>
                 <br>
                 <h4>Ende</h4>
                 <p>Das wars, jetzt kann man einfach über die IP-Adresse zum Web-Interface. Falls etwas nicht
-                    verständlich, oder falsch war, bitt schreib mir über <a
+                    verständlich oder falsch war, bitte schreib mir über <a
                         href="https://twitter.com/KriklerR">Twitter</a> oder per <a
                         href="../contact">Kontakt-Formular</a>.
                 </p>
@@ -305,11 +302,17 @@ pi@light:~ $ sudo rm RaspberryPi_DMX-Light -r</code></pre>
     </div>
 
     <footer>
-        <a href="https://twitter.com/KriklerR"><i class="fab fa-twitter" id="twitter"></i></a>
-        <a href="../contact"><i class="fas fa-envelope-open" id="mail"></i></a>
-        <a href="https://github.com/RichardKrikler"><i class="fab fa-github" id="github"></i></a>
-        <a href="https://www.linkedin.com/in/richard-krikler-3b0233194/"><i class="fab fa-linkedin"
-                id="linkedIn"></i></a>
+        <div></div>
+        <div id="socialMedia">
+            <a href="https://twitter.com/KriklerR"><i class="fab fa-twitter" id="twitter"></i></a>
+            <a href="../contact"><i class="fas fa-envelope-open" id="mail"></i></a>
+            <a href="https://github.com/RichardKrikler"><i class="fab fa-github" id="github"></i></a>
+            <a href="https://www.linkedin.com/in/richard-krikler-3b0233194/"><i class="fab fa-linkedin"
+                    id="linkedIn"></i></a>
+        </div>
+        <div id="otherLinks">
+            <a href="legalNotice">Impressum & Datenschutz</a>
+        </div>
     </footer>
 
 
