@@ -2,12 +2,20 @@
     --main-bc-c: rgb(238, 238, 238);
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
 body {
-    background-color: var(--main-bc-c);
+    /* if the background image is not there -> background color */
+    background: var(--main-bc-c) url(../images/bg_gradient.svg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
     margin: 0;
 
     display: flex;
@@ -34,12 +42,17 @@ a {
 
 
 main {
+    /* Shadow: https://www.cssmatic.com/box-shadow */
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+
     background-color: white;
     border-radius: 10px;
 
     padding: 10px;
     padding-bottom: 20px;
-    
+
     margin: 30px;
 }
 
@@ -47,10 +60,10 @@ main {
     main {
         background-color: white;
         border-radius: 10px;
-    
+
         padding: 10px;
         padding-bottom: 20px;
-        
+
         width: 70%;
         margin: 0 auto;
         margin-top: 30px;
@@ -97,7 +110,7 @@ main div.images img.Portrait {
         width: unset;
         height: 200px;
     }
-    
+
     main div.images img.Portrait {
         width: unset;
     }
@@ -147,7 +160,7 @@ footer div#otherLinks * {
     footer {
         flex-direction: row;
     }
-    
+
     footer div#otherLinks {
         width: 0;
         justify-content: flex-end;
@@ -156,7 +169,7 @@ footer div#otherLinks * {
     footer div#otherLinks * {
         white-space: nowrap;
     }
-    
+
     footer div#otherLinks:last-child {
         padding-right: 5px;
     }
@@ -186,7 +199,7 @@ code {
     display: block;
     background-color: var(--main-bc-c);
     border-radius: 5px;
-    
+
     margin: 5px 0;
     border: 1px gray solid;
     width: min-content;
