@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
 
     <meta name="description" content="Richard Krikler. Kontakt Formular von Richard Krikler">
-    <meta name="keywords"
-        content="Krikler Richard,KriklerRichard,Krikler,Richard,Kontakt">
+    <meta name="keywords" content="Krikler Richard,KriklerRichard,Krikler,Richard,Kontakt">
     <meta name="author" content="Richard Krikler">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,22 +15,25 @@
     <script src="https://kit.fontawesome.com/87d3f13c28.js" crossorigin="anonymous"></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/form.css">
+
+    <!-- Styling for Form -->
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
 
     <!-- Animation CSS PlugIn -->
-    <link rel="stylesheet" href="css/tuesday/tuesday.min.css">
+    <link rel="stylesheet" href="/css/tuesday/tuesday.min.css">
 
     <!-- Favicon - ICON -->
-    <link rel='icon' type='image/x-icon' href='favicon.ico' />
-    <link rel="apple-touch-icon" href="favicon.ico" />
+    <link rel='icon' type='image/x-icon' href='/favicon.ico' />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
 
     <!-- JavaScript -->
-    <script src="javascript/script.js" defer></script>
+    <script src="/javascript/script.js" defer></script>
 
     <!-- JavaScript for Language -->
-    <script src="../javascript/language.js" defer></script>
+    <script src="/javascript/language.js" defer></script>
 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -64,7 +66,9 @@
 
         <main>
             <h2>Kontakt</h2>
-            <form action="https://richard-krikler.000webhostapp.com/mail.php" method="post">
+            <form action="https://send.pageclip.co/oADkypmQGyHSizwfdvmM2Af0I6D1fmpN/mail" class="pageclip-form"
+                method="post">
+                <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
                 <label for="firstNameForm">Vorname:</label>
                 <input type="text" id="firstNameForm" name="firstName" required>
 
@@ -80,7 +84,10 @@
                 <label for="textForm">Text:</label>
                 <textarea id="textForm" cols="30" rows="10" name="message" required></textarea>
 
-                <input type="submit" value="Senden">
+                <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+                <button type="submit" class="pageclip-form__submit">
+                    <span>Senden</span>
+                </button>
             </form>
         </main>
 
@@ -90,17 +97,18 @@
         <div></div>
         <div id="socialMedia">
             <a href="https://twitter.com/KriklerR"><i class="fab fa-twitter" id="twitter"></i></a>
-            <a href="contact"><i class="fas fa-envelope-open" id="mail"></i></a>
+            <a href="/contact"><i class="fas fa-envelope-open" id="mail"></i></a>
             <a href="https://github.com/RichardKrikler"><i class="fab fa-github" id="github"></i></a>
             <a href="https://www.linkedin.com/in/richard-krikler-3b0233194/"><i class="fab fa-linkedin"
                     id="linkedIn"></i></a>
         </div>
         <div id="otherLinks">
-            <a href="legalNotice">Impressum & Datenschutz</a>
+            <a href="/legalNotice">Impressum & Datenschutz</a>
         </div>
     </footer>
 
 
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 </body>
 
 </html>

@@ -19,7 +19,7 @@ form textarea {
     max-height: 500px;
 }
 
-form input[type=submit] {
+form button[type=submit] {
     border: 1px solid #cccccc;
     border-radius: 5px;
     padding: 10px;
