@@ -1,0 +1,2 @@
+RaspberryPi DMX-Light
+Dieses Projekt besteht aus ein Web-Interface, bei dem man eine DMX-Lampe mithilfe eines RaspberryPi's und der Open Lighting Architecture (OLA) steuern kann. Dabei gibt es eine Farbauswahl (jquery-wheelcolorpicker von fujaru) mit einer Helligkeitseinstallung und die Möglichkeit Presets zu speichern.
