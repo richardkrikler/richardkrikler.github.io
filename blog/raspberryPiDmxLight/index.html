@@ -31,7 +31,7 @@
     <script src="/javascript/script.js" defer></script>
 
     <!-- JavaScript for Language -->
-    <script src="/javascript/language.js" defer></script>
+    <script src="/javascript/germanMenu.js" defer></script>
     <script>
         language = "de";
     </script>
@@ -96,11 +96,11 @@
                 </p>
 
                 <div class="images" id="raspberryPiDmxLightPic">
-                    <img src="/images/projects/raspberryPiDmxLight/desktop.png"
-                        data-bp="/images/projects/raspberryPiDmxLight/desktop.png"
+                    <img src="images/desktop.png"
+                        data-bp="images/desktop.png"
                         alt="RaspberryPi DMX-Light Desktop version">
-                    <img src="/images/projects/raspberryPiDmxLight/mobile.png"
-                        data-bp="/images/projects/raspberryPiDmxLight/mobile.png"
+                    <img src="images/mobile.png"
+                        data-bp="images/mobile.png"
                         alt="RaspberryPi DMX-Light Mobile version" class="Portrait">
                 </div>
 
@@ -122,10 +122,10 @@
                     Licht).
                 </p>
                 <div class="images" id="setup">
-                    <img src="/images/projects/raspberryPiDmxLight/setup.png"
-                        data-bp="/images/projects/raspberryPiDmxLight/setup.png" alt="Setup">
-                    <img src="/images/projects/raspberryPiDmxLight/exampleLight.png"
-                        data-bp="/images/projects/raspberryPiDmxLight/exampleLight.png" alt="Beispiel Setup">
+                    <img src="images/setup.png"
+                        data-bp="images/setup.png" alt="Setup">
+                    <img src="images/entry.png"
+                        data-bp="images/entry.png" alt="Beispiel Setup">
                 </div>
 
                 <h3>Konfiguration / Installation</h3>
@@ -147,8 +147,8 @@
                     Und folgende Zeile vor “exit” einfügen
                     <pre><code>su pi -c olad</code></pre>
                     <div class="images" id="olaAutostart">
-                        <img src="/images/projects/raspberryPiDmxLight/etc-rc_local.png"
-                            data-bp="/images/projects/raspberryPiDmxLight/etc-rc_local.png"
+                        <img src="images/etc-rc_local.png"
+                            data-bp="images/etc-rc_local.png"
                             alt="etc-rc_local Autostart OLA">
                     </div>
                 </p>
@@ -175,8 +175,8 @@ SUBSYSTEM=="usb|usb_device", ACTION=="add", ATTRS{idVendor}=="0403", ATTRS{idPro
                     Das Plugin "FTDI USB DMX" einschalten und die Plugins "Serial USB" und "Enttec Open DMX"
                     deaktivieren.
                     <div class="images" id="olaPlugins">
-                        <img src="/images/projects/raspberryPiDmxLight/plugins.png"
-                            data-bp="/images/projects/raspberryPiDmxLight/plugins.png" alt="OLA Plugins">
+                        <img src="images/plugins.png"
+                            data-bp="images/plugins.png" alt="OLA Plugins">
                     </div>
                     Allerdings wurden bei mir die Plugins nicht immer beim Booten neugeladen, deswegen braucht man ein
                     Python-Script, namens "reloadPlugins.py". Dieses wird später auch beim Web-Interface
@@ -218,8 +218,8 @@ exit (0)</code></pre>
                     Und dann noch eine weitere Zeile in die Datei (ganz unten) einfügen.
                     <pre><code class="bash">sudo python /var/www/html/reloadPlugins.py</code></pre>
                     <div class="images" id="pythonAutostart">
-                        <img src="/images/projects/raspberryPiDmxLight/etc-profile.png"
-                            data-bp="/images/projects/raspberryPiDmxLight/etc-profile.png" alt="Python OLA Plugins">
+                        <img src="images/etc-profile.png"
+                            data-bp="images/etc-profile.png" alt="Python OLA Plugins">
                     </div>
                 </p>
 
@@ -234,8 +234,8 @@ exit (0)</code></pre>
                     <h5>SSH</h5>
                     <pre><code class="bash">pi@light:~ $ ola_dev_info</code></pre>
                     <div class="images" id="ola_dev_info">
-                        <img src="/images/projects/raspberryPiDmxLight/ola_dev_info.png"
-                            data-bp="/images/projects/raspberryPiDmxLight/ola_dev_info.png" alt="ola_dev_info Output">
+                        <img src="images/ola_dev_info.png"
+                            data-bp="images/ola_dev_info.png" alt="ola_dev_info Output">
                     </div>
                     In diesem Fall muss man Device 2 (FT232R USB) und Device 6 (ShowNet für port0 für 1-512) verwenden.
                     (-d = Device; -p = Port; -u = Universe)
@@ -244,11 +244,11 @@ exit (0)</code></pre>
                     <h5>Web-Interface OLA</h5>
                     <p>
                         <div class="images" id="olaWebInterface">
-                            <img src="/images/projects/raspberryPiDmxLight/addUniverse.png"
-                                data-bp="/images/projects/raspberryPiDmxLight/addUniverse.png"
+                            <img src="images/addUniverse.png"
+                                data-bp="images/addUniverse.png"
                                 alt="OLA Web-Interface: add universe" class="landscape">
-                            <img src="/images/projects/raspberryPiDmxLight/addUniversePorts.png"
-                                data-bp="/images/projects/raspberryPiDmxLight/addUniversePorts.png"
+                            <img src="images/addUniversePorts.png"
+                                data-bp="images/addUniversePorts.png"
                                 alt="OLA Web-Interface">
                         </div>
                     </p>
@@ -260,8 +260,8 @@ exit (0)</code></pre>
                     Und jetzt kann man im Web-Interface in das Universe einsteigen und zum Reiter "DMX-Console" gehen.
                     Dort kann man die einzelnen Channels einstellen.
                     <div class="images" id="olaDmxConsole">
-                        <img src="/images/projects/raspberryPiDmxLight/dmxConsole.png"
-                            data-bp="/images/projects/raspberryPiDmxLight/dmxConsole.png"
+                        <img src="images/dmxConsole.png"
+                            data-bp="images/dmxConsole.png"
                             alt="OLA Web-Interface: DMX-Console">
                     </div>
 
@@ -273,8 +273,8 @@ exit (0)</code></pre>
                     Wenn das geschafft ist, sollte man auch über das CMD (Windows) einen curl command senden können.
                     <pre><code class="PowerShell">curl -d u=1 -d d=255,255,255,255,0,0,0,0,0,0,0,0,0,0,0,0 "http://192.168.0.128:9090/set_dmx"</code></pre>
                     <div class="images" id="WindowsCmdSetDmx">
-                        <img src="/images/projects/raspberryPiDmxLight/curlExample.png"
-                            data-bp="/images/projects/raspberryPiDmxLight/curlExample.png" alt="Windows-CMD: SetDmx">
+                        <img src="images/curlExample.png"
+                            data-bp="images/curlExample.png" alt="Windows-CMD: SetDmx">
                     </div>
                 </p>
 
