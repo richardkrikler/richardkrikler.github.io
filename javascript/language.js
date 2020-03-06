@@ -70,20 +70,3 @@ function reloadMenu() {
     }
     
 }
-
-// let languageCounter = 0;
-// function languageAnimation() {
-//     if (detectmob) {
-//         let options = event.target.children;
-//         if (languageCounter % 2 == 0) {
-//             for (let i = 0; i < options.length; i++) {
-//                 options[i].className = "animated tdFadeIn";            
-//             }
-//         } else {
-//             for (let i = 0; i < options.length; i++) {
-//                 options[i].className = "";            
-//             }         
-//         }
-//     }
-//     languageCounter++;
-// }
