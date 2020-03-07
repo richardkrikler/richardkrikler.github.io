@@ -27,8 +27,6 @@
 
     <!-- JavaScript -->
     <script src="/javascript/script.js" defer></script>
-    <script src="/javascript/httpRequest.js" defer></script>
-    <script src="/javascript/loadBlogEntries.js" defer></script>
 
     <!-- JavaScript for Language -->
     <script src="/javascript/germanMenu.js" defer></script>
@@ -64,6 +62,15 @@
 
         <main>
             <h2>Blog</h2>
+            <hr>
+            <a class="blogA" href="raspberryPiDmxLight">
+                <div class="text">
+                    <h3>RaspberryPi DMX-Light</h3>
+                </div>
+                <div class="images">
+                    <img src="raspberryPiDmxLight/images/entry.png" alt="Blog specific Picture">
+                </div>
+            </a>
         </main>
 
     </div>
@@ -88,8 +95,6 @@
 <style>
     .blogA {
         width: 100%;
-        display: grid;
-        grid-template-columns: 1fr min-content;
         color: black;
     }
 
@@ -97,18 +102,38 @@
         text-decoration: none;
     }
 
-    .blogA:hover > div > h3 {
+    .blogA:hover>div>h3 {
         text-decoration: underline;
     }
 
-    .blogA div {
-        grid-column: 1;
-    }
+    @media (min-width: 600px) {
+        .blogA {
+            display: grid;
+            grid-template-columns: 1fr min-content;
+        }
 
-    .blogA img {
-        height: 150px;
-        grid-column: 2;
-        border-radius: 5px;
+        .blogA div.text h3 {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .blogA div.text {
+            grid-column: 1;
+
+            height: 100%;
+            position: relative;
+        }
+
+        .blogA div.images {
+            grid-column: 2;
+        }
+
+        .blogA div.images img {
+            height: 150px;
+        }
     }
 </style>
 
