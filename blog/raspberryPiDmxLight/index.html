@@ -13,15 +13,9 @@
 
     <title>RaspberryPi DMX-Light - Richard Krikler</title>
 
-    <!-- Font Awsome -->
-    <script src="https://kit.fontawesome.com/87d3f13c28.js" crossorigin="anonymous"></script>
-
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/menu.css">
-
-    <!-- Animation CSS PlugIn -->
-    <link rel="stylesheet" href="/css/tuesday/tuesday.min.css">
 
     <!-- Favicon - ICON -->
     <link rel='icon' type='image/x-icon' href='/favicon.ico' />
@@ -36,31 +30,12 @@
         language = "de";
     </script>
 
-    <!-- JavaScript for Image View -->
-    <script src="/javascript/BigPicture/BigPicture.js"></script>
-
     <!-- highlight.js -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
     <script>
         hljs.initHighlightingOnLoad();
     </script>
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155217097-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-155217097-2');
-    </script>
-
-
 </head>
 
 <body>
@@ -96,12 +71,10 @@
                 </p>
 
                 <div class="images" id="raspberryPiDmxLightPic">
-                    <img src="images/desktop.png"
-                        data-bp="images/desktop.png"
+                    <img src="images/desktop.png" data-bp="images/desktop.png"
                         alt="RaspberryPi DMX-Light Desktop version">
-                    <img src="images/mobile.png"
-                        data-bp="images/mobile.png"
-                        alt="RaspberryPi DMX-Light Mobile version" class="Portrait">
+                    <img src="images/mobile.png" data-bp="images/mobile.png" alt="RaspberryPi DMX-Light Mobile version"
+                        class="Portrait">
                 </div>
 
                 <h3>Komponenten</h3>
@@ -122,10 +95,8 @@
                     Licht).
                 </p>
                 <div class="images" id="setup">
-                    <img src="images/setup.png"
-                        data-bp="images/setup.png" alt="Setup">
-                    <img src="images/entry.png"
-                        data-bp="images/entry.png" alt="Beispiel Setup">
+                    <img src="images/setup.png" data-bp="images/setup.png" alt="Setup">
+                    <img src="images/entry.png" data-bp="images/entry.png" alt="Beispiel Setup">
                 </div>
 
                 <h3>Konfiguration / Installation</h3>
@@ -147,8 +118,7 @@
                     Und folgende Zeile vor “exit” einfügen
                     <pre><code>su pi -c olad</code></pre>
                     <div class="images" id="olaAutostart">
-                        <img src="images/etc-rc_local.png"
-                            data-bp="images/etc-rc_local.png"
+                        <img src="images/etc-rc_local.png" data-bp="images/etc-rc_local.png"
                             alt="etc-rc_local Autostart OLA">
                     </div>
                 </p>
@@ -175,8 +145,7 @@ SUBSYSTEM=="usb|usb_device", ACTION=="add", ATTRS{idVendor}=="0403", ATTRS{idPro
                     Das Plugin "FTDI USB DMX" einschalten und die Plugins "Serial USB" und "Enttec Open DMX"
                     deaktivieren.
                     <div class="images" id="olaPlugins">
-                        <img src="images/plugins.png"
-                            data-bp="images/plugins.png" alt="OLA Plugins">
+                        <img src="images/plugins.png" data-bp="images/plugins.png" alt="OLA Plugins">
                     </div>
                     Allerdings wurden bei mir die Plugins nicht immer beim Booten neugeladen, deswegen braucht man ein
                     Python-Script, namens "reloadPlugins.py". Dieses wird später auch beim Web-Interface
@@ -218,8 +187,7 @@ exit (0)</code></pre>
                     Und dann noch eine weitere Zeile in die Datei (ganz unten) einfügen.
                     <pre><code class="bash">sudo python /var/www/html/reloadPlugins.py</code></pre>
                     <div class="images" id="pythonAutostart">
-                        <img src="images/etc-profile.png"
-                            data-bp="images/etc-profile.png" alt="Python OLA Plugins">
+                        <img src="images/etc-profile.png" data-bp="images/etc-profile.png" alt="Python OLA Plugins">
                     </div>
                 </p>
 
@@ -234,8 +202,7 @@ exit (0)</code></pre>
                     <h5>SSH</h5>
                     <pre><code class="bash">pi@light:~ $ ola_dev_info</code></pre>
                     <div class="images" id="ola_dev_info">
-                        <img src="images/ola_dev_info.png"
-                            data-bp="images/ola_dev_info.png" alt="ola_dev_info Output">
+                        <img src="images/ola_dev_info.png" data-bp="images/ola_dev_info.png" alt="ola_dev_info Output">
                     </div>
                     In diesem Fall muss man Device 2 (FT232R USB) und Device 6 (ShowNet für port0 für 1-512) verwenden.
                     (-d = Device; -p = Port; -u = Universe)
@@ -244,11 +211,9 @@ exit (0)</code></pre>
                     <h5>Web-Interface OLA</h5>
                     <p>
                         <div class="images" id="olaWebInterface">
-                            <img src="images/addUniverse.png"
-                                data-bp="images/addUniverse.png"
+                            <img src="images/addUniverse.png" data-bp="images/addUniverse.png"
                                 alt="OLA Web-Interface: add universe" class="landscape">
-                            <img src="images/addUniversePorts.png"
-                                data-bp="images/addUniversePorts.png"
+                            <img src="images/addUniversePorts.png" data-bp="images/addUniversePorts.png"
                                 alt="OLA Web-Interface">
                         </div>
                     </p>
@@ -260,8 +225,7 @@ exit (0)</code></pre>
                     Und jetzt kann man im Web-Interface in das Universe einsteigen und zum Reiter "DMX-Console" gehen.
                     Dort kann man die einzelnen Channels einstellen.
                     <div class="images" id="olaDmxConsole">
-                        <img src="images/dmxConsole.png"
-                            data-bp="images/dmxConsole.png"
+                        <img src="images/dmxConsole.png" data-bp="images/dmxConsole.png"
                             alt="OLA Web-Interface: DMX-Console">
                     </div>
 
@@ -273,8 +237,7 @@ exit (0)</code></pre>
                     Wenn das geschafft ist, sollte man auch über das CMD (Windows) einen curl command senden können.
                     <pre><code class="PowerShell">curl -d u=1 -d d=255,255,255,255,0,0,0,0,0,0,0,0,0,0,0,0 "http://192.168.0.128:9090/set_dmx"</code></pre>
                     <div class="images" id="WindowsCmdSetDmx">
-                        <img src="images/curlExample.png"
-                            data-bp="images/curlExample.png" alt="Windows-CMD: SetDmx">
+                        <img src="images/curlExample.png" data-bp="images/curlExample.png" alt="Windows-CMD: SetDmx">
                     </div>
                 </p>
 
@@ -291,26 +254,31 @@ pi@light:~ $ sudo rm RaspberryPi_DMX-Light -r</code></pre>
 
                 <br>
                 <h4>Ende</h4>
-                <p>Das wars, jetzt kann man einfach über die IP-Adresse zum Web-Interface gelangen. 
+                <p>Das wars, jetzt kann man einfach über die IP-Adresse zum Web-Interface gelangen.
                     Falls etwas nicht verständlich oder falsch war, bitte schreib es in die Kommentare.
                 </p>
             </section>
-
-<div id="wpac-comment"></div>
-<script type="text/javascript">
-wpac_init = window.wpac_init || [];
-wpac_init.push({widget: 'Comment', id: 23742});
-(function() {
-    if ('WIDGETPACK_LOADED' in window) return;
-    WIDGETPACK_LOADED = true;
-    var mc = document.createElement('script');
-    mc.type = 'text/javascript';
-    mc.async = true;
-    mc.src = 'https://embed.widgetpack.com/widget.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-})();
-</script>
-<a href="https://widgetpack.com" class="wpac-cr">Comments System WIDGET PACK</a>
+            
+            <hr>
+            <div id="wpac-comment"></div>
+            <script type="text/javascript">
+                wpac_init = window.wpac_init || [];
+                wpac_init.push({
+                    widget: 'Comment',
+                    id: 23742
+                });
+                (function () {
+                    if ('WIDGETPACK_LOADED' in window) return;
+                    WIDGETPACK_LOADED = true;
+                    var mc = document.createElement('script');
+                    mc.type = 'text/javascript';
+                    mc.async = true;
+                    mc.src = 'https://embed.widgetpack.com/widget.js';
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(mc, s.nextSibling);
+                })();
+            </script>
+            <a href="https://widgetpack.com" class="wpac-cr">Comments System WIDGET PACK</a>
         </main>
 
     </div>
