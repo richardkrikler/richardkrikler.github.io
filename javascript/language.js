@@ -51,7 +51,7 @@ function reloadMenu() {
         for (let i = 0; i < menuOverlay.length; i++) {
             menuOverlay[i].innerHTML = "<li><a href=\"/\">Home</a></li>" +
                 "<li><a href=\"/projects\">Projekte</a></li>" +
-                "<li><a href=\"/blog\">blog</a></li>" +
+                "<li><a href=\"/blog\">Blog</a></li>" +
                 "<li><a href=\"/contact\">Kontakt</a></li>" +
                 "<li><select class = \"languageList\">" +
                 "<option value = \"de\">DE</option>" +
