@@ -2,15 +2,13 @@ User-Agent: *
 Allow: /
 Allow: /projects
 Allow: /contact
-Disallow: /css
 Disallow: /en
 Disallow: /images
+Disallow: /css
 Disallow: /javascript
 Disallow: /404
 Disallow: /404.html
 Disallow: /favicon.ico
 Disallow: /LICENSE
-Disallow: /robots.txt
 
-Sitemap: sitemap.xml
-
+Sitemap: https://richardkrikler.com/robots.txt
