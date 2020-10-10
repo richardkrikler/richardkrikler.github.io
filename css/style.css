@@ -5,6 +5,7 @@
 html,
 body {
     height: 100%;
+    line-break: auto;
 }
 
 body {
@@ -129,6 +130,10 @@ footer {
     background-color: black;
     width: 100%;
     padding: 5px 0;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 footer div {
@@ -140,6 +145,30 @@ footer div * {
     color: white;
     font-size: 15pt;
     padding: 5px;
+}
+
+footer div#otherLinks * {
+    font-size: 12pt;
+    align-self: center;
+}
+
+@media (min-width: 600px) {
+    footer {
+        flex-direction: row;
+    }
+
+    footer div#otherLinks {
+        width: 0;
+        justify-content: flex-end;
+    }
+
+    footer div#otherLinks * {
+        white-space: nowrap;
+    }
+
+    footer div#otherLinks:last-child {
+        padding-right: 5px;
+    }
 }
 
 footer i#twitter:hover {
