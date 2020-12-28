@@ -53,6 +53,8 @@ main {
     padding-bottom: 20px;
 
     margin: 30px;
+
+    overflow: auto;
 }
 
 @media (min-width: 600px) {
@@ -202,4 +204,52 @@ code {
 
 pre {
     overflow: auto;
+}
+
+
+
+
+/* portraitTextViewDiv */
+#portraitTextViewDiv #portraitDiv {
+    display: flex;
+    justify-content: center;
+}
+
+#portraitTextViewDiv #portraitDiv img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+
+@media (min-width: 600px) {
+    #portraitTextViewDiv {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 100%;
+        gap: 5px;
+    }
+
+    #portraitTextViewDiv #portraitDiv,
+    #portraitTextViewDiv #textDescriptionDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #portraitTextViewDiv #portraitDiv {
+        width: 100%;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #portraitTextViewDiv #textDescriptionDiv {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #portraitTextViewDiv #portraitDiv img {
+        width: 70%;
+        max-width: 200px;
+    }
 }
