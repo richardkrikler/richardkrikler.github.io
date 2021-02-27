@@ -9,8 +9,7 @@ let menuOverlay = document.getElementsByClassName("menuOverlay");
 window.addEventListener("load", function () {
     for (let i = 0; i < menuOverlay.length; i++) {
         menuOverlay[i].innerHTML = "<li><a href=\"/\">Home</a></li>" +
-            "<li><a href=\"/#projects\">Projects</a></li>" +
-            "<li><a href=\"/contact\">Contact</a></li>";
+            "<li><a href=\"/#projects\">Projects</a></li>";
     }
 });
 
