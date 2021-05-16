@@ -17,12 +17,25 @@ body {
     background-size: cover;
 
     margin: 0;
-    display: flex;
-    flex-direction: column;
+
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
 
 div#wrapper {
     flex: 1 0 auto;
+}
+
+
+@media (min-width: 600px) {
+    div#wrapper {
+        display: table-cell;
+        vertical-align: middle;
+    }
 }
 
 * {
@@ -62,13 +75,13 @@ main {
         background-color: white;
         border-radius: 10px;
 
-        padding: 10px;
-        padding-bottom: 20px;
+        padding: 40px;
+        /* padding-bottom: 20px; */
 
-        width: 70%;
+        width: 65%;
         margin: 0 auto;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
 }
 
@@ -129,16 +142,8 @@ hr {
 
 
 footer {
-    background-color: black;
-    width: 100%;
-    padding: 5px 0;
+    padding: 10px;
 
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-footer div {
     display: flex;
     justify-content: center;
 }
@@ -146,7 +151,6 @@ footer div {
 footer div * {
     color: white;
     font-size: 15pt;
-    padding: 5px;
 }
 
 footer div#otherLinks * {
@@ -156,36 +160,42 @@ footer div#otherLinks * {
 
 @media (min-width: 600px) {
     footer {
-        flex-direction: row;
-    }
-
-    footer div#otherLinks {
-        width: 0;
-        justify-content: flex-end;
+        position: absolute;
+        bottom: 0;
+        left: unset;
+        right: 0;
     }
 
     footer div#otherLinks * {
         white-space: nowrap;
     }
-
-    footer div#otherLinks:last-child {
-        padding-right: 5px;
-    }
 }
 
-footer i#twitter:hover {
+
+div#socialMedia {
+    display: flex;
+    justify-content: center;
+    gap: 15pt;
+}
+
+div#socialMedia i {
+    color: black;
+    font-size: 25pt;
+}
+
+div#socialMedia i#twitter:hover {
     color: rgb(0, 172, 237);
 }
 
-footer i#mail:hover {
+div#socialMedia i#mail:hover {
     color: rgb(230, 55, 52);
 }
 
-footer i#github:hover {
+div#socialMedia i#github:hover {
     color: rgb(199, 0, 199);
 }
 
-footer i#linkedIn:hover {
+div#socialMedia i#linkedIn:hover {
     color: #0274b3;
 }
 

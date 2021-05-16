@@ -17,7 +17,6 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/menu.css">
 
     <!-- Animation CSS PlugIn -->
     <link rel="stylesheet" href="css/tuesday/tuesday.min.css">
@@ -36,17 +35,6 @@
 
 <body>
     <div id="wrapper">
-        <nav>
-            <h1 id="name"><a href="/">Richard Krikler</a></h1>
-            <span id="menuBt">Menu</span>
-
-            <ul class="menuOverlay"></ul>
-        </nav>
-
-        <div id="menu">
-            <ul class="menuOverlay"></ul>
-        </div>
-
         <main>
             <h2>Richard Krikler</h2>
 
@@ -84,98 +72,29 @@
 
             <br>
             <h2 id="projects">Projects</h2>
+            <ul>
+                <li><a href="https://github.com/RichardKrikler/Notability-Viewer">Notability-Viewer</a></li>
+                <li><a href="https://github.com/RichardKrikler/GameOfLife">Game Of Life - Simulation</a></li>
+                <li><a href="https://github.com/RichardKrikler/RaspberryPi_DMX-Light">RaspberryPi DMX-Light - Control
+                        Page</a></li>
+                <li><a href="https://github.com/fabio-anzola/Blockchain">Blockchain</a></li>
+                <li><a href="https://github.com/RichardKrikler/PHP-Quiz">PHP-Quiz</a></li>
+                <li><a href="http://photo-story.richardkrikler.com">The journey of a paper boat. (Photo-Story)</a></li>
+            </ul>
 
-            <section>
-                <h3 id="notabilityViewer">Notability-Viewer</h3>
-                <p>
-                    Notability Note Viewer for the Backup PDFs inside of a file system (e.g. with OneDrive integration
-                    in Windows).
-                </p>
-                <p>
-                    Currently there isn't a Notability program from gingerlabs out there for windows. So I've tried to
-                    at least create a simple viewer, by using the backup PDFs from Notability. I am using OneDrive as a
-                    backup media, so all the files are directly within the filesystem. Of course I could just search for
-                    the file I need and open it, but I really like to browse through my notes, without opening and then
-                    closing each note separately.
-                </p>
-                <p>
-                    My software just lists all files and folders of the backup folder. There you can go into the folders
-                    and click onto the file you want to see. You can also use the search bar to search through the
-                    currently visible elements.
-                </p>
-                <div class="images" id="notabilityViewerPic">
-                    <img src="images/notabilityViewer/notabilityViewer.png"
-                        data-bp="images/notabilityViewer/notabilityViewer.png" alt="Notability-Viewer Example">
-                    <img src="images/notabilityViewer/notabilityViewer_closedOverview.png"
-                        data-bp="images/notabilityViewer/notabilityViewer_closedOverview.png"
-                        alt="Notability-Viewer Example">
-                </div>
-                <p><a href="https://github.com/RichardKrikler/Notability-Viewer" target="_blank"
-                        rel="noopener noreferrer">GitHub Repository</a>
-                </p>
-            </section>
-
-            <section>
-                <h3 id="raspberryPiDmxLight">RaspberryPi DMX-Light</h3>
-                <p>
-                    This is a Web-Interface, where you can control a DMX-Lamp with the help of a RapberryPi and the
-                    <a href="https://www.openlighting.org/" target="_blank" rel="noopener noreferrer">Open Lighting
-                        Architecture (OLA)</a>. It contains a colorpicker (<a
-                        href="https://github.com/fujaru/jquery-wheelcolorpicker" target="_blank"
-                        rel="noopener noreferrer">jquery-wheelcolorpicker</a> by <a href="https://github.com/fujaru"
-                        target="_blank" rel="noopener noreferrer">fujaru</a>)
-                    with a brightness control and the possibility to save presets.
-                </p>
-
-                <div class="images" id="raspberryPiDmxLightPic">
-                    <img src="images/raspberryPiDmxLight/images/desktop.png"
-                        data-bp="images/raspberryPiDmxLight/images/desktop.png"
-                        alt="RaspberryPi DMX-Light Desktop version">
-                    <img src="images/raspberryPiDmxLight/images/mobile.png"
-                        data-bp="images/raspberryPiDmxLight/images/mobile.png"
-                        alt="RaspberryPi DMX-Light Mobile version" class="Portrait">
-                </div>
-                <p><a href="https://github.com/RichardKrikler/RaspberryPi_DMX-Light" target="_blank"
-                        rel="noopener noreferrer">GitHub
-                        Repository</a>
-                </p>
-            </section>
-
-            <section>
-                <h3 id="keyboardShortcuts">Keyboard-Shortcuts</h3>
-                <p>
-                    In this script I am programming various Keyboard Shortcuts, to make the every day life with the
-                    computer more efficient.
-                    For example the duplication of Chrome-Tabs (Ctrl+Alt+D), or switching through all Chrome-Tabs
-                    (Right-Shift / Ctrl+Right-Shift), is accelerating the usage.
-                </p>
-                <p>
-                    Hotkeys.ahk: general Hotkeys (Chrome, IntelliJ, ...)
-                </p>
-                <p>
-                    ShowMacrosForProgram.ahk: shows all Hotkeys for the current active program
-                </p>
-                <p>
-                    appSwitcher.ahk: for switching fast between two programs
-                </p>
-                <p><a href="https://github.com/RichardKrikler/Keyboard-Shortcuts" target="_blank"
-                        rel="noopener noreferrer">GitHub Repository</a>
-                </p>
-            </section>
+            <div id="socialMedia">
+                <a href="https://twitter.com/richardkrikler"><i class="fab fa-twitter" id="twitter"></i></a>
+                <a
+                    href="mailto:&#107;&#114;&#105;&#107;&#108;&#101;&#114;&#114;&#105;&#099;&#104;&#097;&#114;&#100;&#064;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#046;&#099;&#111;&#109;"><i
+                        class="fas fa-envelope-open" id="mail"></i></a>
+                <a href="https://github.com/richardkrikler"><i class="fab fa-github" id="github"></i></a>
+                <a href="https://www.linkedin.com/in/richardkrikler/"><i class="fab fa-linkedin" id="linkedIn"></i></a>
+            </div>
         </main>
 
     </div>
 
     <footer>
-        <div></div>
-        <div id="socialMedia">
-            <a href="https://twitter.com/richardkrikler"><i class="fab fa-twitter" id="twitter"></i></a>
-            <a
-                href="mailto:&#107;&#114;&#105;&#107;&#108;&#101;&#114;&#114;&#105;&#099;&#104;&#097;&#114;&#100;&#064;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#046;&#099;&#111;&#109;"><i
-                    class="fas fa-envelope-open" id="mail"></i></a>
-            <a href="https://github.com/richardkrikler"><i class="fab fa-github" id="github"></i></a>
-            <a href="https://www.linkedin.com/in/richardkrikler/"><i class="fab fa-linkedin" id="linkedIn"></i></a>
-        </div>
         <div id="otherLinks">
             <a href="legalNotice">Legal Notice</a>
         </div>
