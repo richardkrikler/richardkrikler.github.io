@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 :root {
     --main-bc-c: #eeeeee;
+}
+
+* {
+    /* Hide all Outlines of focused Elements */
+    outline: none;
+
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 html,
@@ -38,13 +49,6 @@ div#wrapper {
     }
 }
 
-* {
-    /* Hide all Outlines of focused Elements */
-    outline: none;
-
-    font-family: "Open Sans", sans-serif;
-}
-
 
 a {
     text-decoration: none;
@@ -68,6 +72,8 @@ main {
     margin: 30px;
 
     overflow: auto;
+
+    font-size: 15pt;
 }
 
 @media (min-width: 600px) {
@@ -87,7 +93,7 @@ main {
 
 
 main a {
-    color: blue;
+    color: #1d9ad6;
 }
 
 main a:hover {
@@ -134,12 +140,6 @@ main div.images img.Portrait {
     }
 }
 
-hr {
-    border: 1px solid black;
-}
-
-
-
 
 footer {
     padding: 10px;
@@ -172,50 +172,78 @@ footer div#otherLinks * {
 }
 
 
-div#socialMedia {
+
+#second-wrapper {
     display: flex;
-    justify-content: center;
-    gap: 15pt;
+    width: max-content;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+
+
+div#projects * {
+    color: black;
+}
+
+div#projects ul {
+    padding-top: 20px;
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+div#projects ul li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+div#projects a {
+    color: #696969;
+    font-size: 14pt;
+    text-decoration: none;
+    display: block;
+    transition: all 0.1s ease-in-out;
+}
+
+div#projects a:hover {
+    transform: scale(1.04);
+}
+
+
+
+div#socialMedia {
+    margin-left: 150px;
+}
+
+div#socialMedia ul {
+    padding-top: 20px;
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+div#socialMedia ul li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    transition: all 0.1s ease-in-out;
+}
+
+div#socialMedia li:hover {
+    transform: scale(1.04);
+}
+
+div#socialMedia a {
+    text-decoration: none;
+    color: #696969;
 }
 
 div#socialMedia i {
-    color: black;
-    font-size: 25pt;
+    color: #696969;
+    font-size: 17pt;
 }
 
-div#socialMedia i#twitter:hover {
-    color: rgb(0, 172, 237);
+div#socialMedia span {
+    margin-left: 15px;
 }
-
-div#socialMedia i#mail:hover {
-    color: rgb(230, 55, 52);
-}
-
-div#socialMedia i#github:hover {
-    color: rgb(199, 0, 199);
-}
-
-div#socialMedia i#linkedIn:hover {
-    color: #0274b3;
-}
-
-
-
-
-code {
-    display: block;
-    background-color: var(--main-bc-c);
-    border-radius: 5px;
-
-    margin: 5px 0;
-    border: 1px gray solid;
-    width: min-content;
-}
-
-pre {
-    overflow: auto;
-}
-
 
 
 
@@ -263,3 +291,7 @@ pre {
         max-width: 200px;
     }
 }
+
+
+
+ne-right
