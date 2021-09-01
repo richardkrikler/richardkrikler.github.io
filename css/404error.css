@@ -1,18 +1,16 @@
+
+* {
+    color: #696969;
+}
+
+
 main {
     padding: 0;
-    min-height: max-content;
 }
 
 main h1 {
     font-size: 50pt;
-    color: #34dca1;
 }
-
-main div#left {
-    background-color: #34dca1;
-    border-radius: 10px 10px 0px 0px;
-}
-
 
 main div {
     display: flex;
@@ -21,13 +19,28 @@ main div {
     align-items: center;
 }
 
-main div#right a {
+main div#left {
+    margin-top: 30px;
+}
+
+main div#right #backBt {
+    background-color: #696969;
     color: white;
-    background-color: #34dca1;
     padding: 8px;
     border-radius: 10px;
     text-decoration: none;
-    margin-bottom: 70px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+div#socialMedia {
+    flex-direction: row;
+    gap: 15px;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+div#socialMedia li {
 }
 
 
@@ -38,12 +51,16 @@ main div#right a {
 
     main div#left {
         float: left;
-        border-radius: 10px 0px 0px 10px;
     }
-
+    
+    main div#left h1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
     main div#right {
         float: right;
-        border-radius: 0px 0px 10px 10px;
     }
 
     main div {
