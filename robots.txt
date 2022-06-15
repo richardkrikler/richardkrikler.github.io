@@ -1,11 +1,6 @@
 User-Agent: *
 Allow: /
-Allow: /#projects
 Disallow: /images
-Disallow: /css
-Disallow: /javascript
-Disallow: /404
-Disallow: /404.html
 Disallow: /favicon.ico
 Disallow: /LICENSE
 
