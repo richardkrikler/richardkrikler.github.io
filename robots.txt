@@ -9,4 +9,4 @@ Disallow: /404.html
 Disallow: /favicon.ico
 Disallow: /LICENSE
 
-Sitemap: https://richardkrikler.com/robots.txt
+Sitemap: https://richardkrikler.at/robots.txt
