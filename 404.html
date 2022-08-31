@@ -1,1 +1,31 @@
-404
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirect</title>
+  </head>
+  <body></body>
+  <script>
+    const urlValue = location.pathname
+
+    const sites = {
+      home: 'https://richardkrikler.at',
+      twitter: 'https://twitter.com/richardKrikler',
+      github: 'https://github.com/richardkrikler'
+    }
+
+    if (urlValue !== '') {
+      const value = urlValue.substr(1, urlValue.length)
+      const url = sites[value]
+      if (url === undefined) {
+        window.location = sites['home']
+      } else {
+        window.location = url
+      }
+    } else {
+      window.location = sites['home']
+    }
+  </script>
+</html>
