@@ -167,9 +167,26 @@ ul {
     position: relative;
 }
 
+.content#projects .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.content#projects .project-container .project {
+    background-color: lightblue;
+    width: 20%;
+    min-width: 200px;
+    max-width: 300px;
+    height: 100px;
+    text-align: center;
+}
+
 /* --- Contact --- */
 
 .content#contact {
+    position: relative;
 }
 
 footer {
