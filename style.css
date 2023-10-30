@@ -57,7 +57,7 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   fill: #6b6b6b;
-  filter: drop-shadow(6px 0 1px rgba(189, 189, 189, 1));
+  filter: drop-shadow(6px 0 1px rgba(189, 189, 189, .8));
 }
 
 .icon:hover {
