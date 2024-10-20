@@ -13,36 +13,20 @@
   color: #6b6b6b;
 }
 
-h1,
-h2 {
+h1 {
   font-weight: 300;
 }
 
-html,
 body {
-  height: 100%;
-  line-break: auto;
-  scroll-snap-type: y mandatory;
-}
-
-body {
-  width: 100%;
-  height: 100vh;
-  background-color: #EDEDED;
-}
-
-.content {
   min-height: 100vh;
-}
-
-.content#start {
-  height: 100%;
+  background-color: #EDEDED;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 
-.content#start .hello-title {
+.hello-title {
   font-weight: bolder;
   font-size: 60pt;
   font-style: italic;
@@ -68,12 +52,14 @@ body {
   display: flex;
   justify-content: center;
   gap: 20px;
+  margin-top: 2.625rem;
+  margin-bottom: 3.9rem;
 }
 
 a {
   text-decoration: none;
 }
 
-h2 {
-  font-weight: 400;
+p {
+  font-size: 14.25pt;
 }
